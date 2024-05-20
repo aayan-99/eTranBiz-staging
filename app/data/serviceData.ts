@@ -11,8 +11,8 @@ import cloudTransformationPerson from '@/app/assets/images/cloudTransformationPe
 
 import techTransformation from '@/app/assets/images/landingprimaryservices/02.png'
 import techTransformationHero from '@/app/assets/images/services/primaryservices/technologytransformationhero.webp'
-import oracleDatabaseTab from '@/app/assets/images/services/premiumServices/oracledatabasetab.webp'
-import oracleFusionTab from '@/app/assets/images/services/premiumServices/oraclefusionmiddlewaretab.webp'
+import oracleDatabaseTab from '@/app/assets/images/services/premiumservices/oracledatabasetab.webp'
+import oracleFusionTab from '@/app/assets/images/services/premiumservices/oraclefusionmiddlewaretab.webp'
 
 import proServices from '@/app/assets/images/landingprimaryservices/04.png'
 import professionalServicesHero from '@/app/assets/images/services/primaryservices/professionalServicesHero.webp'
