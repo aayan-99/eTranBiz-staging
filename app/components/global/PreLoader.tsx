@@ -16,7 +16,7 @@ const PreLoader = () => {
 
   return (
     <div className={`w-full ${firstLoad ? 'h-screen' : 'h-0'} overflow-hidden transition-all duration-500 ease-in-out bg-[color:var(--primary-black)] z-[200] fixed left-0 right-0 bottom-0 top-0 flex justify-center items-center`}>
-      <Image src={logo} alt='Logo' className={`animate-pulse ${firstLoad ? '' : 'scale-0'} mx-10 transition-all duration-500 ease-in-out`} width={600}  />
+      <Image src={logo?.src} alt='Logo' className={`animate-pulse ${firstLoad ? '' : 'scale-0'} mx-10 transition-all duration-500 ease-in-out`} width={600} height={600}  />
     </div>
   )
 }

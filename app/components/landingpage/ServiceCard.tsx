@@ -8,7 +8,7 @@ import PrimaryButton from '../global/PrimaryButton';
 
 interface ServiceCardProps {
     id: number;
-    image: string | StaticImageData;
+    image: string | any;
     title: string;
     content: string;
     route?: string;

@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 
 interface ImageDropDownProps {
     title: string;
-    image?: string;
+    image?: string | any;
     contentAbout?: string | null;
     content?: string[] | null;
 }
@@ -20,9 +20,9 @@ const ImageDropdown: React.FC<ImageDropDownProps> = ({ title, image, content, co
 
     return (
         <div onClick={() => setIsOpen(!isOpen)} className={`w-full] relative px-20 py-12 rounded-xl transition-all duration-500 ease-in-out ${isOpen ? 'bg-servicebox-gradient' : 'bg-[#1A1A1A]'}`}>
-            <div className='w-full absolute z-0'>
-                <img src={image} className='w-full h-full object-cover' alt="" />
-            </div>
+            {/* <div className='w-full absolute  z-0'>
+                <Image src={image} width={50} height={50} className='w-full h-full object-cover' alt="" />
+            </div> */}
             <div className={`w-full flex gap-10 ${pathname.includes('oracleCloud') ? 'flex-row' : 'flex-col'}`}>
                 <div className='pr-5'>
                     <h1 className={`text-2xl md:text-4xl ${isOpen ? 'text-[#CEFF00]' : 'text-white'} transition-all duration-500 ease-in-out md:min-w-[470px]`}>{title}</h1>
@@ -49,7 +49,7 @@ const ImageDropdown: React.FC<ImageDropDownProps> = ({ title, image, content, co
                 </div>
             </div>
             <span className='absolute top-10 right-5 lg:right-14'>
-                <Image src={link_white} width={40} className={`${isOpen ? 'rotate-180 opacity-60' : ''} transition-all duration-200 ease-in-out`} alt={'Open button'} />
+                <Image src={link_white?.src} width={40} height={40} className={`${isOpen ? 'rotate-180 opacity-60' : ''} transition-all duration-200 ease-in-out`} alt={'Open button'} />
             </span>
         </div>
     )

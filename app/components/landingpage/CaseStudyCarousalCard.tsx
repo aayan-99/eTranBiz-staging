@@ -7,7 +7,7 @@ interface CaseStudyCarousalCardProps {
     title: string;
     sub_title: string;
     content: string;
-    image: string | StaticImageData;
+    image: string | any;
 }
 
 const CaseStudyCarousalCard: React.FC<CaseStudyCarousalCardProps> = ({ title, sub_title, content, image }) => {

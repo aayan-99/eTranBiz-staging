@@ -67,7 +67,7 @@ const Company = () => {
                                     <div className='relative w-2 h-2 bg-white rounded-full hover:bg-transparent border-2 transition-all duration-300 ease-in-out group' key={data?.id}>
                                         <div className='absulute translate-x-10 flex items-center gap-6 -translate-y-10 text-left w-[700px]'>
                                             <div className='w-fit'>
-                                                <Image src={redFlag} width={20} alt='Red flag' />
+                                                <Image src={redFlag?.src} width={20} height={20} alt='Red flag' />
                                             </div>
                                             <div className='flex flex-col gap-2'>
                                                 <h1 className='group-hover:text-[#CEFF00] text-[30px] group-hover:text-[40px] transition-all duration-300 ease-in-out'>{data?.year}</h1>

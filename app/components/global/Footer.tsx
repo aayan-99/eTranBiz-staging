@@ -33,7 +33,7 @@ function Footer() {
                 <div className='w-full rounded-[20px] bg-[color:var(--secondary-color)] px-8 py-6'>
                     <div className='w-full flex flex-col md:flex-row gap-10 md:gap-[150px] mb-10 md:mb-0'>
                         <div>
-                            <Image src={logo_white} width={150} alt='Main logo' />
+                            <Image src={logo_white?.src} width={150} height={150} alt='Main logo' />
                         </div>
                         <div className='flex gap-[50px] md:gap-[100px]'>
                             {

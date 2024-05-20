@@ -24,7 +24,7 @@ const page = () => {
           <Dropdown dataArray={services} />
         </div>
         <div className='pb-32 pt-14'>
-          <ImageHeader title={staffing?.title} image={staffing?.image} content={about?.content} />
+          <ImageHeader title={staffing?.title} image={staffing?.image?.src} content={about?.content} />
           <div className='my-20 flex items-start justify-center text-justify'>
             {
               staffing?.types?.map((data, i) => (

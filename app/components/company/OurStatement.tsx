@@ -16,7 +16,7 @@ const OurStatement: React.FC<OurStatementProps> = ({ index, id, title, content }
         <span className='text-[#CEFF00] relative mx-1'>
           {title?.split(' ')[1]}
           <div className='absolute -top-[20px] right-0'>
-            <Image src={arrow} width={26} alt='Arrow' />
+            <Image src={arrow?.src} width={26} height={26} alt='Arrow' />
           </div>
         </span>
       </p>
