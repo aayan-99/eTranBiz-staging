@@ -1,18 +1,18 @@
 import enterprise from '@/app/assets/images/landingPrimaryservices/01.png'
-import enterpriseHero from '@/app/assets/images/services/primaryServices/enterprise-hero.webp'
+import enterpriseHero from '@/app/assets/images/services/primaryServices/enterprisehero.webp'
 import oracleBusinessTab from '@/app/assets/images/services/premiumservices/oracleBusinessTab.webp'
 import oracleCloudTab from '@/app/assets/images/services/premiumservices/oracleCloudTab.webp'
 import oraclePeopleSoftTab from '@/app/assets/images/services/premiumservices/oraclePeopleSpotTab.webp'
 import oracleCRMTab from '@/app/assets/images/services/premiumservices/oracleCRMTab.webp'
 
 import cloudTransformations from '@/app/assets/images/landingPrimaryservices/03.png'
-import cloudTransformationsHero from '@/app/assets/images/services/primaryServices/cloudTransformationsHero.webp'
+import cloudTransformationsHero from '@/app/assets/images/services/primaryServices/cloudtransformationshero.webp'
 import cloudTransformationPerson from '@/app/assets/images/cloudTransformationPerson.webp'
 
 import techTransformation from '@/app/assets/images/landingPrimaryservices/02.png'
-import techTransformationHero from '@/app/assets/images/services/primaryServices/technologyTransformationHero.webp'
-import oracleDatabaseTab from '@/app/assets/images/services/premiumServices/oracleDatabaseTab.webp'
-import oracleFusionTab from '@/app/assets/images/services/premiumServices/oracleFusionMiddlewareTab.webp'
+import techTransformationHero from '@/app/assets/images/services/primaryServices/technologytransformationhero.webp'
+import oracleDatabaseTab from '@/app/assets/images/services/premiumServices/oracledatabasetab.webp'
+import oracleFusionTab from '@/app/assets/images/services/premiumServices/oraclefusionmiddlewaretab.webp'
 
 import proServices from '@/app/assets/images/landingPrimaryservices/04.png'
 import professionalServicesHero from '@/app/assets/images/services/primaryServices/professionalServicesHero.webp'
