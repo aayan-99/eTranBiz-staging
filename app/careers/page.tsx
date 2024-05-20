@@ -12,7 +12,7 @@ const page = () => {
 
   return (
     <div className='pb-20'>
-      <SecondaryHeroSection title={title} image={heroImg} content={heroContent} />
+      <SecondaryHeroSection title={title} image={heroImg?.src} content={heroContent} />
       <div className='px-[2.5rem] md:px-[10rem] xl:px-[18rem] py-20'>
         <p className='text-2xl mb-8 text-[color:var(--primary-teal)]'>{contentTitle?.split(' ')[0]}
           <span className='text-[#CEFF00] relative mx-1'>
@@ -33,8 +33,10 @@ const page = () => {
             }
           </div>
         </div>
-        <div className='mb-40 mt-20 relative'>
-          <Image src={careerImage} alt='Career Image' />
+        <div className='mb-40 relative'>
+          <div className='relative'>
+            <Image src={careerImage?.src} width={1200} height={300} alt='Career Image' />
+          </div>
           <div className='absolute left-20 bottom-16 flex flex-col text-white z-10 text-[5rem] leading-[60px] font-[900] tracking-[-0.08em]'>
             <h1 className=''>People</h1>
             <h1 className=''>Innovation</h1>

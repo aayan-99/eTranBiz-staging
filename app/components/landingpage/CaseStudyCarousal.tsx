@@ -28,7 +28,7 @@ const CaseStudyCarousal = () => {
                     {
                         caseStudyCarousalData?.map((data) => (
                             <div key={data?.id} className='mr-4'>
-                                <CaseStudyCarousalCard title={data?.title} content={data?.content} image={data?.image} sub_title={data?.sub_title} />
+                                <CaseStudyCarousalCard title={data?.title} content={data?.content} image={data?.image?.src} sub_title={data?.sub_title} />
                             </div>
                         ))
                     }

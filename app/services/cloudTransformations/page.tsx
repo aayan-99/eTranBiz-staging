@@ -20,7 +20,7 @@ const page = () => {
         <div className='w-full pt-32 pb-28'>
           <div className='w-full flex flex-col lg:flex-row items-center gap-20'>
             <div>
-              <Image src={ourGuidance?.image} width={1200} alt='Person Image' />
+              <Image src={ourGuidance?.image?.src} width={1200} height={300} alt='Person Image' />
             </div>
             <div className='text-white'>
               <h1 className='text-3xl mb-5'>{ourGuidance?.title}</h1>

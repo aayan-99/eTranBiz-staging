@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image";
 export interface Service {
     id: number;
     title: string;
-    tabImage: StaticImageData | string;
+    tabImage: any | string;
     about: string[];
     services: {
         id: number;

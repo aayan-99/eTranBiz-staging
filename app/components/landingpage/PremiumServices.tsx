@@ -82,10 +82,10 @@ const PremiumServices = () => {
                     ))}
                 </div>
             </div>
-            <div className='w-full grid grid-cols-2 gap-5 lg:gap-4 lg:flex justify-between items-center mt-[100px]'>
+            <div className='w-full grid grid-cols-2 md:grid-cols-4 gap-5 xl:gap-4 xl:flex justify-between items-center mt-[100px]'>
                 {
                     servicesList?.specializedServices?.map((data) => (
-                        <ServiceCard id={data?.id} title={data?.title} route={data?.route} content={data?.content} image={data?.image} key={data?.id} />
+                        <ServiceCard id={data?.id} title={data?.title} route={data?.route} content={data?.content} image={data?.image?.src} key={data?.id} />
                     ))
                 }
             </div>Í

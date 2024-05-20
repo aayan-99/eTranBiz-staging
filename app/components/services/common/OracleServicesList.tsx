@@ -77,7 +77,7 @@ const OracleServicesList: React.FC<OracleServicesProps> = ({ oracleServices }) =
                                 {data?.route ? <Link href={data?.route}><SecondaryButton title='READ MORE' /></Link> : null}
                             </div>
                             <div className='w-full h-full absolute top-0 left-0 z-0'>
-                                <Image src={data?.tabImage} className='w-full h-full object-cover rounded-2xl opacity-70' alt='Service Image' />
+                                <Image src={data?.tabImage?.src} fill={true} className='w-full h-full object-cover rounded-2xl opacity-70' alt='Service Image' />
                             </div>
                         </div>
                     ))

@@ -51,14 +51,14 @@ interface ServicesList {
     primaryServices: {
         id: number;
         title: string;
-        image: string | StaticImageData;
+        image: string | any;
         content: string;
         route: string | null;
     }[];
     specializedServices: {
         id: number;
         title: string;
-        image: string | StaticImageData;
+        image: string | any;
         content: string;
         route: string;
     }[];

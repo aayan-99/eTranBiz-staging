@@ -64,7 +64,7 @@ const SupportServicesList = ({ supportServices }: { supportServices: any[] }) =>
                         <div id={`service-${data?.id}`} key={data?.id} className='w-[80%] md:w-[70%] lg:w-[60%] mx-auto relative text-white py-20 rounded-2xl mb-10'>
                             <div className='w-full flex justify-center items-center gap-24'>
                                 <div className='w-full max-w-[300px]'>
-                                    <Image src={data?.tabImage} className='w-full object-cover rounded-2xl opacity-70' alt='Service Image' />
+                                    <Image src={data?.tabImage?.src} width={300} height={300} className='w-full object-cover rounded-2xl opacity-70' alt='Service Image' />
                                 </div>
                                 <div className=' relative z-[5]'>
                                     <h1 className='text-5xl mb-8'>{data?.title}</h1>

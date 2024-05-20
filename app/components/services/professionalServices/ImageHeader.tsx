@@ -5,7 +5,7 @@ const ImageHeader = ({ image, title, content }: { image: string | StaticImageDat
     return (
         <div className='flex flex-col lg:flex-row items-center gap-20'>
             <div>
-                <Image src={image} width={220} alt='proServicesAboutImg' />
+                <Image src={image} width={220} height={220} alt='proServicesAboutImg' />
             </div>
             <div className='flex flex-col gap-2 text-white'>
                 <h1 className='text-3xl'>{title}</h1>

@@ -11,7 +11,9 @@ const SecondaryHeroSection: React.FC<SecondaryHeroSectionProps> = ({ title, cont
     return (
         <div className='w-full h-[40vh] md:h-[60vh] lg:h-[75vh] relative flex justify-center items-center'>
             <div className='w-full h-full absolute inset-0 z-0'>
-                <Image src={image} alt='Hero Image' className='w-full h-full object-cover' />
+                <div className='w-[100%] mx-auto h-[40vh] md:h-[60vh] lg:h-[75vh] relative'>
+                    <Image src={image} alt='Hero Image' fill={true} className='w-full h-full object-cover' />
+                </div>
                 <div className='w-full h-[10vh] bottom-0 left-0 right-0 bg-gradient-to-b from-transparent to-[color:var(--primary-black)] absolute z-0' />
             </div>
             <div className='static z-10 text-white'>

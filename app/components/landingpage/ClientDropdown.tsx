@@ -35,7 +35,7 @@ const ClientDropdown = () => {
                                 }
                             </div>
                             <div className='w-fit'>
-                                <Image src={data?.image} alt='Client Image' width={350} className='rounded-[20px]' />
+                                <Image src={data?.image?.src} alt='Client Image' width={350} className='rounded-[20px]' />
                             </div>
                         </div>
                     </div>

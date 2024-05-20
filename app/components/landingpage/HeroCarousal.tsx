@@ -25,8 +25,8 @@ const HeroCarousal = () => {
                 <Slider {...settings}>
                     {
                         heroCarousalData?.map((data) => (
-                            <div key={data?.id} className='relative w-full'>
-                                <Image src={data?.image} alt='Hero Image' className='z-[70] static max-h-[90vh] object-cover' />
+                            <div key={data?.id} className='relative w-full h-[90vh]'>
+                                <Image src={data?.image?.src} fill={true} alt='Hero Image' className='z-[70] static max-h-[90vh] object-cover' />
                                 <div className='absolute bg-gradient-to-b from-transparent to-[#131313] bottom-0 h-[10vh] right-0 left-0'></div>
                             </div>
                         ))
@@ -37,8 +37,8 @@ const HeroCarousal = () => {
                 <Slider {...settings}>
                     {
                         heroCarousalData?.map((data) => (
-                            <div key={data?.id} className='relative w-full'>
-                                <Image src={data?.image} alt='Hero Image' className='z-[20] min-h-[60vh] static object-cover' />
+                            <div key={data?.id} className='relative w-full h-[90vh]'>
+                                <Image src={data?.image?.src} fill={true} alt='Hero Image' className='z-[20] min-h-[60vh] static object-cover' />
                                 <div className='absolute bg-gradient-to-b from-transparent to-[#131313] bottom-0 h-[10vh] right-0 left-0 z-[80]'></div>
                             </div>
                         ))

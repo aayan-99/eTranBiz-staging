@@ -23,8 +23,8 @@ const CaseStudyCarousalCard: React.FC<CaseStudyCarousalCardProps> = ({ title, su
                     </div>
                 </div>
             </div>
-            <div className='w-fit aspect-square overflow-hidden rounded-3xl mr-5'>
-                <Image src={image} width={600} alt='case study' className='object-cover' />
+            <div className='w-fit aspect-square overflow-hidden relative h-fit rounded-3xl mr-5'>
+                <Image src={image} width={600} height={600} alt='case study' className='rounded-xl' />
             </div>
         </div>
     )

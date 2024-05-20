@@ -18,7 +18,7 @@ const page = () => {
       <div className='w-full px-[2.5rem] md:px-[10rem] xl:px-[18rem] py-10'>
         <ServicePageHeader header={title} />
         <div className='pt-32'>
-          <ImageHeader title={about?.title} image={about?.image} content={about?.content} />
+          <ImageHeader title={about?.title} image={about?.image?.src} content={about?.content} />
         </div>
         <div className='pb-40 pt-20'>
           <Dropdown dataArray={services} />

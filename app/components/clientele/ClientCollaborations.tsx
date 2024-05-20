@@ -16,7 +16,7 @@ const ClientCollaborations: React.FC<CollaborationsProps> = ({ title, clientsDat
             {
                 clientsData?.map((data) => (
                     <div className='w-full flex justify-start items-center' key={data?.id}>
-                        <Image src={data?.image} alt='Company Logo' className='' />
+                        <Image src={data?.image?.src} width={400} height={400} alt='Company Logo' className='' />
                     </div>
                 ))
             }
