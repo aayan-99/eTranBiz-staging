@@ -1,22 +1,24 @@
 import caseStudyImage from '@/app/assets/images/rectangle.svg'
 import clientImage from '@/app/assets/images/client_sample.webp'
-import hero from '@/app/assets/images/hero.webp'
-import sampleImg1 from '@/app/assets/images/sample-image-1.webp'
-import sampleImg2 from '@/app/assets/images/sample-image-2.webp'
+import heroImg1 from '@/app/assets/images/landingpagecarousal/hero1.png'
+import heroImg2 from '@/app/assets/images/landingpagecarousal/hero2.png'
 import building from '@/app/assets/images/building.webp'
+
+import case_study_01 from '@/app/assets/images/case_studies_01.png'
+
+import oracleCloud from '@/app/assets/images/landingpremiumservices/01.png'
+import oracleBusiness from '@/app/assets/images/landingpremiumservices/02.png'
+import oracleDatabase from '@/app/assets/images/landingpremiumservices/03.png'
+import oracleFusion from '@/app/assets/images/landingpremiumservices/04.png'
 
 export const heroCarousalData = [
     {
-        id: 0,
-        image: hero,
-    },
-    {
         id: 1,
-        image: sampleImg1,
+        image: heroImg1,
     },
     {
         id: 2,
-        image: sampleImg2,
+        image: heroImg2,
     },
 ];
 
@@ -68,87 +70,54 @@ export const premiumServicesData = {
     ]
 };
 
-export const serviceDataLanding = [
-    {
-        id: 0,
-        title: 'Oracle e business suite services',
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium voluptatum sed, illo architecto!`,
-        image: building,
-    },
-    {
-        id: 1,
-        title: 'Oracle fusion applications servics',
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium voluptatum sed, illo architecto!`,
-        image: building,
-    },
-    {
-        id: 2,
-        title: 'Oracle database',
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium voluptatum sed, illo architecto!`,
-        image: building,
-    },
-    {
-        id: 3,
-        title: 'Oracle cloud infrastructure',
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium voluptatum sed, illo architecto!`,
-        image: building,
-    },
-    {
-        id: 4,
-        title: 'Oracle fusion middleware',
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium voluptatum sed, illo architecto!`,
-        image: building,
-    },
-    {
-        id: 5,
-        title: 'Migration services',
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium voluptatum sed, illo architecto!`,
-        image: building,
-    },
-    {
-        id: 6,
-        title: 'Professional services',
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium voluptatum sed, illo architecto!`,
-        image: building,
-    },
-    {
-        id: 7,
-        title: 'Managed services',
-        content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium voluptatum sed, illo architecto!`,
-        image: building,
-    },
-]
+// export const serviceDataLanding = [
+//     {
+//         id: 0,
+//         title: 'Enterprise Applications',
+//         content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium voluptatum sed, illo architecto!`,
+//         image: enterprise,
+//     },
+//     {
+//         id: 1,
+//         title: 'Technology Transformation',
+//         content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium voluptatum sed, illo architecto!`,
+//         image: cardPattern,
+//     },
+//     {
+//         id: 2,
+//         title: 'Cloud Transformation',
+//         content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium voluptatum sed, illo architecto!`,
+//         image: cloudTransformation,
+//     },
+//     {
+//         id: 3,
+//         title: 'Digitalization',
+//         content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laudantium voluptatum sed, illo architecto!`,
+//         image: cardPattern,
+//     },
+// ]
 
 export const caseStudyCarousalData = [
     {
         id: 0,
-        title: 'Multinational Retail Chain from the UK',
-        content: 'As a boutique consulting and services firm, we excel at assisting organisations with mission-critical, sophisticated business technologies. We provide our services to clients come from all over the world, including all of India, Europe, the Middle East, South Africa, and Oceania.',
-        image: caseStudyImage,
+        title: 'Income Tax Dept. Of India',
+        sub_title: 'Support of Oracle E-Business Suite & Professional Services',
+        content: 'Infosys, a leading IT services company, manages the IT operations within the Income Tax Department, covering a wide range of products, technologies, services, and processes. Key components include Java, Microservices, the e-filing portal, BO portal, Oracle Applications, PL SQL, database infrastructure, middleware, and integration systems.',
+        image: case_study_01,
     },
     {
         id: 1,
-        title: 'Multinational Retail Chain from the UK',
-        content: 'As a boutique consulting and services firm, we excel at assisting organisations with mission-critical, sophisticated business technologies. We provide our services to clients come from all over the world, including all of India, Europe, the Middle East, South Africa, and Oceania.',
-        image: caseStudyImage,
+        title: 'Income Tax Dept. Of India',
+        sub_title: 'Support of Oracle E-Business Suite & Professional Services',
+        content: 'Infosys, a leading IT services company, manages the IT operations within the Income Tax Department, covering a wide range of products, technologies, services, and processes. Key components include Java, Microservices, the e-filing portal, BO portal, Oracle Applications, PL SQL, database infrastructure, middleware, and integration systems.',
+        image: case_study_01,
     },
     {
         id: 2,
-        title: 'Multinational Retail Chain from the UK',
-        content: 'As a boutique consulting and services firm, we excel at assisting organisations with mission-critical, sophisticated business technologies. We provide our services to clients come from all over the world, including all of India, Europe, the Middle East, South Africa, and Oceania.',
-        image: caseStudyImage,
-    },
-    {
-        id: 3,
-        title: 'Multinational Retail Chain from the UK',
-        content: 'As a boutique consulting and services firm, we excel at assisting organisations with mission-critical, sophisticated business technologies. We provide our services to clients come from all over the world, including all of India, Europe, the Middle East, South Africa, and Oceania.',
-        image: caseStudyImage,
-    },
-    {
-        id: 4,
-        title: 'Multinational Retail Chain from the UK',
-        content: 'As a boutique consulting and services firm, we excel at assisting organisations with mission-critical, sophisticated business technologies. We provide our services to clients come from all over the world, including all of India, Europe, the Middle East, South Africa, and Oceania.',
-        image: caseStudyImage,
+        title: 'Income Tax Dept. Of India',
+        sub_title: 'Support of Oracle E-Business Suite & Professional Services',
+        content: 'Infosys, a leading IT services company, manages the IT operations within the Income Tax Department, covering a wide range of products, technologies, services, and processes. Key components include Java, Microservices, the e-filing portal, BO portal, Oracle Applications, PL SQL, database infrastructure, middleware, and integration systems.',
+        image: case_study_01,
     },
 ];
 
@@ -188,5 +157,36 @@ export const clientsLandingData = [
             `Lorem ipsum dolor sit amet consectetur adipisicing elit. In dignissimos eveniet ipsum suscipit illo laborum voluptate adipisci, reiciendis sapiente tempore provident delectus veniam blanditiis ipsam. Consequatur culpa illum, beatae placeat soluta tempora, voluptates delectus aut magni quis rerum vel quae! dynamic world of banking.`,
         ],
         image: clientImage,
+    },
+];
+
+export const industriesLandingData = [
+    {
+        id: 0,
+        title: 'Banking',
+    },
+    {
+        id: 1,
+        title: 'Government & PSUs',
+    },
+    {
+        id: 2,
+        title: 'Oil & Gas',
+    },
+    {
+        id: 3,
+        title: 'Logistics',
+    },
+    {
+        id: 4,
+        title: 'Automotive',
+    },
+    {
+        id: 5,
+        title: 'Retail',
+    },
+    {
+        id: 6,
+        title: 'Manufacturing',
     },
 ];

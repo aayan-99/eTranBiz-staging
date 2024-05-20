@@ -29,13 +29,18 @@ export const footerData = {
                 {
                     id: 'link_3',
                     title: 'Clientelle',
-                    route: '#',
+                    route: '/clientele',
                 },
                 {
                     id: 'link_4',
                     title: 'Testimonials',
                     route: '#',
                 },
+                {
+                    id: 'link_5',
+                    title: 'Company',
+                    route: '/company',
+                }
             ],
         },
         {

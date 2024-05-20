@@ -3,7 +3,8 @@
 import React from 'react'
 import ServiceCard from './ServiceCard'
 import Slider from 'react-slick';
-import { serviceDataLanding } from '@/app/data/landingPageData';
+import TextHeading from '../global/TextHeading';
+import { servicesList } from '@/app/data/serviceData';
 
 function ServicesLanding() {
 
@@ -19,18 +20,20 @@ function ServicesLanding() {
   };
 
   return (
-    <div className='pt-[300px] pb-[100px] px-[7rem] xl:px-[15rem]'>
-      <h1 className='text-[20px] text-[color:var(--primary-teal)] font-[800] mb-5'>WHAT WE OFFER AS SERVICES</h1>
-      <div className='w-full'>
-        <Slider {...settings} className='w-full flex gap-4 pb-10'>
-          {
-            serviceDataLanding?.map((data) => (
-              <div className='w-fit pr-4' key={data?.id}>
-                <ServiceCard {...data} />
-              </div>
-            ))
-          }
-        </Slider>
+    <div className='pt-[50px] pb-[100px] px-10 md:px-[7rem]'>
+      <TextHeading headingText='PRIMARY SERVICES' textPosition='center' />
+      <div className='w-full grid grid-cols-2 md:flex gap-x-2 md:gap-0 gap-y-4 mt-24'>
+        {
+          servicesList?.primaryServices?.map((data) => (
+            <div className='w-fit pr-4' key={data?.id}>
+              {
+                data?.route ? (
+                  <ServiceCard id={data?.id} title={data?.title} image={data?.image} route={data?.route} content={data?.content} />
+                ) : null
+              }
+            </div>
+          ))
+        }
       </div>
     </div>
   )

@@ -22,12 +22,12 @@ const ClientDropdown = () => {
             {
                 clientsLandingData?.map((data) => (
                     <div key={data?.id} className='w-full relative'>
-                        <div className={`w-full flex justify-between items-center py-8`} onClick={() => handleClickDropdown(data?.id)}>
-                            <h1 className='text-white text-[40px] font-[400]'>{data?.title}</h1>
+                        <div className={`w-full flex justify-between items-center py-6 md:py-8`} onClick={() => handleClickDropdown(data?.id)}>
+                            <h1 className='text-white text-[30px] md:text-[40px] font-[400]'>{data?.title}</h1>
                             <SecondaryButton title={currentId === data?.id ? 'READ LESS' : 'READ MORE'} />
                         </div>
-                        <div className={`w-full ${data?.id === currentId ? 'h-[380px]' : 'h-0'} ${data?.id === 3 ? '' : ' border-b border-white'} flex justify-between items-center overflow-hidden transition-all duration-200 ease-in-out`}>
-                            <div className='w-[50%] flex flex-col justify-start items-center'>
+                        <div className={`w-full ${data?.id === currentId ? 'h-[400px] overflow-y-scroll pb-3' : 'h-0'} ${data?.id === 3 ? '' : ' border-b border-white'} flex flex-col md:flex-row justify-between items-start md:items-center overflow-hidden transition-all duration-200 ease-in-out`}>
+                            <div className='md:w-[50%] flex flex-col justify-start items-center'>
                                 {
                                     data?.content?.map((content_data, i) => (
                                         <p key={i} className='text-white text-[18px] font-[400] mb-4'>{content_data}</p>
