@@ -41,7 +41,7 @@ const Company = () => {
                     <div className='flex flex-col lg:flex-row gap-10 lg:gap-0'>
                         {
                             goal?.map((data, i) => (
-                                <OurStatement index={i} id={data?.id} title={data?.title} content={data?.content} />
+                                <OurStatement key={data?.id} index={i} id={data?.id} title={data?.title} content={data?.content} />
                             ))
                         }
                     </div>

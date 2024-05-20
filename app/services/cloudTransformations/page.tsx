@@ -27,7 +27,7 @@ const page = () => {
               <div className='flex flex-col gap-3'>
                 {
                   ourGuidance?.about?.map((data, i) => (
-                    <p className={`${i <= 0 ? 'text-sm mb-3' : 'text-xs'}`}>{i > 0 ? <span className='text-xs mr-2'>●</span> : null}{data}</p>
+                    <p key={i} className={`${i <= 0 ? 'text-sm mb-3' : 'text-xs'}`}>{i > 0 ? <span className='text-xs mr-2'>●</span> : null}{data}</p>
                   ))
                 }
               </div>
@@ -42,7 +42,7 @@ const page = () => {
           <div className='mt-12 flex flex-col gap-5'>
             {
               specializedServices?.map((data) => (
-                <ImageDropdown title={data?.title} content={data?.about} contentAbout={data?.contentAbout} />
+                <ImageDropdown key={data?.id} title={data?.title} content={data?.about} contentAbout={data?.contentAbout} />
               ))
             }
           </div>

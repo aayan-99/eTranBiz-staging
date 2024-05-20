@@ -24,12 +24,12 @@ const Sidebar = () => {
         <div className='flex flex-col gap-6'>
           {
             navData?.map((data) => (
-              <Link href={data?.route} className='text-white' onClick={toggleSidebar}>
+              <Link key={data?.id} href={data?.route} className='text-white' onClick={toggleSidebar}>
                 <h1 className='text-4xl'>{data?.title}</h1>
                 <div className='flex flex-col gap-2 mt-5'>
                   {
                     data?.subRoutes?.map((sub_data) => (
-                      <div onClick={() => router.push(sub_data?.route)}>
+                      <div key={sub_data?.id} onClick={() => router.push(sub_data?.route)}>
                         <h1>{sub_data?.title}</h1>
                       </div>
                     ))

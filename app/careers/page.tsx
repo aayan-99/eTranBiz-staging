@@ -44,7 +44,7 @@ const page = () => {
           </div>
         </div>
         <div className='w-full'>
-          <h1 className='text-white text-4xl'>If you're looking for a place to learn & grow, look no further</h1>
+          <h1 className='text-white text-4xl'>If you&apos;re looking for a place to learn & grow, look no further</h1>
           <p className='my-10 text-md text-white'>At eTranBiz, we are committed to helping our employees learn and grow on the job. We offer a range of learning and development opportunities, including:</p>
           <div className='flex flex-col gap-4 text-sm text-white px-10'>
             <p><span className='text-xs mr-2'>●</span> On-the-job training and mentoring</p>
